@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn-icons-png.flaticon.com/128/4599/4599886.png"
+      rel="icon"
+    />
+    <style>
+      h1,
+      h2 {
+        font-family: "Kode Mono", monospace;
+        font-style: normal;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url('https://i.pinimg.com/736x/80/6d/8b/806d8b18271c92a55dd9eadb3f3315d9.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <center>
+      <h1>Prediction Results</h1>
+      <img src="{{ img_b64 }}" alt="Student Performance Graph" width="40%" />
+      <h2>Prediction Details</h2>
+      <h2>{{ prediction_results }}</h2>
+    </center>
+  </body>
+</html>

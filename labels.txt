@@ -1,0 +1,2 @@
+0 NO-RISK
+1 RISK

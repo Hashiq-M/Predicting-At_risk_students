@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn-icons-png.flaticon.com/128/4599/4599886.png" rel="icon">
+
+    <style>
+      label {
+        font-size: 20px;
+        font-family: "Kode Mono", monospace;
+        font-style: normal;
+        font-weight:bold;
+        display: inline-block;
+        width: 160px;
+        text-align: right;
+      }
+
+      input,
+      select {
+        padding: 10px;
+        margin: 5px;
+        width: 45%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      h1,.sub{
+        font-family: "Kode Mono", monospace;
+        font-style: normal;
+        font-weight:bolder;
+      }
+    </style>
+  </head>
+  <center>
+  <body style="background-image:url('https://i.pinimg.com/736x/80/6d/8b/806d8b18271c92a55dd9eadb3f3315d9.jpg');
+               background-repeat: no-repeat;
+               background-attachment: fixed;
+               background-size: cover;">
+    <h1 style="text-align: center;">Student's Potential</h1>
+    <form action="/process" method="post" style="border:5px solid #FF4500;border-radius:5px;width:fit-content ;">
+      <label>Name : </label>
+      <input type="text" placeholder="Enter your name" name="name" /><br />
+      <label>Cgpa : </label>
+      <input type="text" name="GPA" placeholder="Enter your gpa" /><br />
+      <label>Mark : </label>
+      <input
+        type="text"
+        name="Mark"
+        placeholder="Enter your exam_score"
+      /><br />
+      <label>Attendance : </label>
+      <input type="text" name="Atd" placeholder="Enter your attendance" /><br />
+      <label>Study Hour : </label>
+      <input
+        type="text"
+        name="St_hr"
+        placeholder="Enter your study hours"
+      /><br />
+      <label>Phy. Health : </label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Excellent</option>
+        <option value="1">Good</option>
+        <option value="2">Poor</option></select
+      ><br />
+      <label>Men. Health : </label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Excellent</option>
+        <option value="1">Good</option>
+        <option value="2">Poor</option></select
+      ><br />
+      <input
+        class="sub"
+        style="margin-top:15px;margin-left: 40px; padding: 10px; width:25%;background-color:#FF4500;"
+        type="submit"
+        name="Predict"
+      />
+      </center>
+    </form>
+  </body>
+</html>
