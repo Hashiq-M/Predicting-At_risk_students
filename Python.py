@@ -43,8 +43,8 @@ def process_form():
     img_b64 = f"data:image/png;base64,{base64.b64encode(img_data).decode('utf-8')}"
 
     # Call the predictRisk function
-    prediction_results = student_data.predictRisk("graph.png")
-    return render_template("result.html", img_b64=img_b64, prediction_results=prediction_results)
+    prediction_results , prediction_probabilities = student_data.predictRisk("graph.png")
+    return render_template("result.html", img_b64=img_b64, prediction_results=prediction_results,  prediction_probabilities=prediction_probabilities)
 
 if __name__ == "__main__":
     app.run(debug=True)  # Set debug=False for production

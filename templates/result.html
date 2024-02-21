@@ -19,6 +19,9 @@
         font-style: normal;
         font-weight: bolder;
       }
+      h2 {
+        display: inline;
+      }
     </style>
   </head>
   <body
@@ -31,9 +34,18 @@
   >
     <center>
       <h1>Prediction Results</h1>
-      <img src="{{ img_b64 }}" alt="Student Performance Graph" width="40%" />
-      <h2>Prediction Details</h2>
+      <img
+        src="{{ img_b64 }}"
+        alt="Student Performance Graph"
+        width="40%"
+      /><br />
+      <p></p>
+      <h2>Prediction Details :&nbsp;</h2>
       <h2>{{ prediction_results }}</h2>
+      <br />
+      <p></p>
+      <h2>Prediction Details :&nbsp;</h2>
+      <h2>{{prediction_probabilities}}</h2>
     </center>
   </body>
 </html>

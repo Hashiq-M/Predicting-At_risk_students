@@ -25,6 +25,4 @@ def predictRisk(image_path):
     print("Predicted class:", predicted_class)
     print("Prediction probabilities:", predictions[0])
     
-    return predicted_class
-
-    
+    return predicted_class , predictions[0]
